@@ -12,8 +12,8 @@ WORKDIR /app
 COPY . /app
 
 # Download and setup the sentence transformer model
-RUN python model.py
+RUN python ./model/download_model.py
 
 
 # Default command
-CMD ["python", "main.py"]
+CMD ["python", "main.py", "./input"]
