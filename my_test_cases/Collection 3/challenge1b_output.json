@@ -1,0 +1,77 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Breakfast Ideas.pdf",
+            "Dinner Ideas - Mains_1.pdf",
+            "Dinner Ideas - Mains_2.pdf",
+            "Dinner Ideas - Mains_3.pdf",
+            "Dinner Ideas - Sides_1.pdf",
+            "Dinner Ideas - Sides_2.pdf",
+            "Dinner Ideas - Sides_3.pdf",
+            "Dinner Ideas - Sides_4.pdf",
+            "Lunch Ideas.pdf"
+        ],
+        "persona": "Food Contractor",
+        "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+        "processing_timestamp": "2025-07-28T17:34:25.202841"
+    },
+    "extracted_sections": [
+        {
+            "document": "Dinner Ideas - Sides_2.pdf",
+            "section_title": "Gomae (Spinach with Sesame Dressing)",
+            "importance_rank": 1,
+            "page_number": 13
+        },
+        {
+            "document": "Dinner Ideas - Mains_3.pdf",
+            "section_title": "Pulled Pork Sandwiches Ingredients:",
+            "importance_rank": 2,
+            "page_number": 7
+        },
+        {
+            "document": "Dinner Ideas - Mains_2.pdf",
+            "section_title": "Beef and Broccoli Ingredients:",
+            "importance_rank": 3,
+            "page_number": 7
+        },
+        {
+            "document": "Lunch Ideas.pdf",
+            "section_title": "Mediterranean Tuna Salad Ingredients: 1 can tuna, drained",
+            "importance_rank": 4,
+            "page_number": 14
+        },
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "section_title": "Kartoffelsalat (Potato Salad)",
+            "importance_rank": 5,
+            "page_number": 4
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "Dinner Ideas - Sides_2.pdf",
+            "refined_text": "Gomae (Spinach with Sesame Dressing)  \uf0b7  Ingredients:  o 1 bunch spinach  o 2 tablespoons sesame seeds  o 1 tablespoon soy sauce  o 1 tablespoon sugar  o 1 tablespoon mirin  \uf0b7  Instructions:  o Blanch spinach in boiling water, then rinse in cold water and squeeze out excess  moisture.  o Toast sesame seeds and grind them.  o Mix sesame seeds with soy sauce, sugar, and mirin.  o Toss spinach with dressing and serve.    Gratin Dauphinois  \uf0b7  Ingredients:  o 4 potatoes  o 1 cup heavy cream  o 1/2 c...",
+            "page_number": 13
+        },
+        {
+            "document": "Dinner Ideas - Mains_3.pdf",
+            "refined_text": "Pulled Pork Sandwiches Ingredients:",
+            "page_number": 7
+        },
+        {
+            "document": "Dinner Ideas - Mains_2.pdf",
+            "refined_text": "Beef and Broccoli Ingredients:",
+            "page_number": 7
+        },
+        {
+            "document": "Lunch Ideas.pdf",
+            "refined_text": "Mediterranean Tuna Salad Ingredients: 1 can tuna, drained",
+            "page_number": 14
+        },
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "refined_text": "Kartoffelsalat (Potato Salad)  \uf0b7  Ingredients:  o 4 potatoes  o 1 small onion  o 1/4 cup bacon  o 1/4 cup vinegar  o 1/4 cup chicken broth  o 1 tablespoon mustard  o 1 teaspoon sugar  o 1 teaspoon salt  o 1/2 teaspoon pepper",
+            "page_number": 4
+        }
+    ]
+}
