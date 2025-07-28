@@ -1,43 +1,74 @@
----
-language: en
-license: apache-2.0
-library_name: sentence-transformers
-tags:
-- sentence-transformers
-- feature-extraction
-- sentence-similarity
-- transformers
-datasets:
-- s2orc
-- flax-sentence-embeddings/stackexchange_xml
-- ms_marco
-- gooaq
-- yahoo_answers_topics
-- code_search_net
-- search_qa
-- eli5
-- snli
-- multi_nli
-- wikihow
-- natural_questions
-- trivia_qa
-- embedding-data/sentence-compression
-- embedding-data/flickr30k-captions
-- embedding-data/altlex
-- embedding-data/simple-wiki
-- embedding-data/QQP
-- embedding-data/SPECTER
-- embedding-data/PAQ_pairs
-- embedding-data/WikiAnswers
-pipeline_tag: sentence-similarity
----
+# Adobe Round 1B Challenge
+
+This project is designed to process and analyze PDF documents using advanced NLP techniques and machine learning models.
+
+## Project Structure
+
+```
+├── main.py                 # Main application entry point
+├── round1a_logic.py       # Core logic implementation
+├── requirements.txt        # Python dependencies
+├── dockerfile             # Docker configuration
+├── model/                 # Pre-trained model files and configurations
+├── models/                # Custom model implementations
+└── my_test_cases/        # Test case collections with input/output JSONs and PDFs
+```
+
+## Setup
+
+1. Create a virtual environment:
+```bash
+python -m venv env1b
+```
+
+2. Activate the virtual environment:
+- Windows:
+```bash
+.\env1b\Scripts\activate
+```
+- Unix/MacOS:
+```bash
+source env1b/bin/activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 
-# all-MiniLM-L6-v2
-This is a [sentence-transformers](https://www.SBERT.net) model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
+## Model Information
 
-## Usage (Sentence-Transformers)
-Using this model becomes easy when you have [sentence-transformers](https://www.SBERT.net) installed:
+The project uses the all-MiniLM-L6-v2 sentence transformer model for text processing. This model maps sentences & paragraphs to a 384-dimensional dense vector space and is used for semantic analysis and text similarity tasks.
+
+## Usage
+
+To run the application:
+
+```bash
+python main.py
+```
+
+## Test Cases
+
+Test cases are organized in collections under the `my_test_cases` directory:
+- Collection 1, 2, and 3 each contain:
+  - `challenge1b_input.json`: Input specifications
+  - `challenge1b_output.json`: Expected outputs
+  - `PDFs/`: Test PDF documents
+
+## Docker Support
+
+The project includes Docker support for containerized deployment. To build and run the Docker container:
+
+```bash
+docker build -t adobe-round1b .
+docker run adobe-round1b
+```
+
+## Requirements
+
+See `requirements.txt` for a complete list of Python dependencies.
 
 ```
 pip install -U sentence-transformers
