@@ -1,5 +1,3 @@
-# main.py (DEFINITIVE FINAL BATCH PROCESSING VERSION)
-
 import os
 import json
 import fitz
@@ -8,7 +6,6 @@ import torch
 import datetime
 import sys
 
-# Make sure your Round 1A logic file is in the same directory
 from round1a_logic import BalancedPDFOutlineExtractor
 
 def format_output_json(ranked_sections, input_data, collection_path):
@@ -35,7 +32,6 @@ def format_output_json(ranked_sections, input_data, collection_path):
         refined_text_snippet = ""
         heading_text = section['details']['text']
         
-        # Correctly builds the path to the PDF inside the collection's 'PDFs' folder
         pdf_path = os.path.join(collection_path, 'PDFs', section['details']['document'])
         
         with fitz.open(pdf_path) as pdf_document:
@@ -122,7 +118,6 @@ def find_relevant_sections(collection_path, extractor_1a, relevance_model):
 
     final_output = format_output_json(ranked_sections, input_data, collection_path)
     
-    # --- FILENAME CHANGE IS HERE ---
     output_path = os.path.join(collection_path, 'challenge1b_output.json')
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(final_output, f, indent=4)
