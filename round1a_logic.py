@@ -1,10 +1,8 @@
-# round1a_logic.py (FINAL SIMPLIFIED & CORRECTED VERSION)
-
 import os
 import json
 import pickle
 import re
-import fitz  # PyMuPDF
+import fitz  
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
@@ -49,7 +47,6 @@ class BalancedPDFOutlineExtractor:
 
         headings.sort(key=lambda x: (x['page'], x['y_pos']))
         
-        # Remove y_pos before returning the final outline
         final_outline = [{'level': h['level'], 'text': h['text'], 'page': h['page']} for h in headings]
         
         return {"title": title, "outline": final_outline}
